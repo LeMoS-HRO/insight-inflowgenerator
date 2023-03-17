@@ -16,4 +16,4 @@ LIB_LIBS = \
     -lOpenFOAM \
     -lfiniteVolume \
     -lgsl -lgslcblas \
-    -lvtkIOLegacy-9.0 -lvtkCommonSystem-9.0
+    -lvtkIOLegacy-9.0 -lvtkCommonSystem-9.0 -larmadillo
