@@ -257,7 +257,7 @@ struct AnalyticAnisotropicVortonParametersComputer
         this->sy=L2/sqrt(M_PI)/2.;
         this->sz=L3/sqrt(M_PI)/2.;
 
-
+        /*
             Info<<this->Rprincip<<this->e[0]<<this->e[1]<<this->e[2]
                <<this->sx<<" "<<this->sy<<" "<<this->sz<<" "
               <<this->rx<<" "<<this->ry<<" "<<this->rz<<endl;
@@ -269,6 +269,8 @@ struct AnalyticAnisotropicVortonParametersComputer
                     << "L2="<<(2.*this->sy*sqrt(M_PI))<<" ("<<L2<<")\n"
                     << "L3="<<(2.*this->sz*sqrt(M_PI))<<" ("<<L3<<")\n"
                        ;
+        */
+        
         // recalc delta with modified length scales
         if (this->enabled)
         {
@@ -352,7 +354,8 @@ struct NumericalAnisotropicVortonParametersComputer
         this->sx=rxryrzsxsysz(3);
         this->sy=rxryrzsxsysz(4);
         this->sz=rxryrzsxsysz(5);
-
+        
+        /*
         Info<<this->Rprincip<<this->e[0]<<this->e[1]<<this->e[2]
            <<this->sx<<" "<<this->sy<<" "<<this->sz<<" "
           <<this->rx<<" "<<this->ry<<" "<<this->rz<<endl;
@@ -365,7 +368,7 @@ struct NumericalAnisotropicVortonParametersComputer
                 << "L2="<<(2.*this->sy*sqrt(M_PI))<<" ("<<L2<<")\n"
                 << "L3="<<(2.*this->sz*sqrt(M_PI))<<" ("<<L3<<")\n"
                    ;
-
+        */
         // recalc delta with modified length scales
         if (this->enabled)
         {
